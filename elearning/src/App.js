@@ -1,9 +1,13 @@
 // import logo from "./logo.svg";
 import "./App.css";
-import { Counter } from "./Components/Counter";
+// import { Counter } from "./Components/Counter";
+import { Forms } from "./Components/Forms";
 
 function App() {
-  return <Counter />;
+  return(
+  <Forms/>
+  // <Counter />
+  )
 }
 
 export default App;
