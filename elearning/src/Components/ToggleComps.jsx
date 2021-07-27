@@ -22,8 +22,8 @@ export const ToggleComps = () => {
               : setImageOne("IMG/1jpg")
           }
         >
-          imag change
-        </Button>{" "}
+          image change
+        </Button>
         <Card style={{ backgroundColor: "rgb(185, 231, 185)" }}>
           <h3 style={{ color: colorName }}>PickupBiz</h3>
           <p style={{ color: colorName }}>This my consent</p>
