@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Row, Col, Form, Card, Button } from "react-bootstrap";
+import { Row, Col, Form, Card, Button, Image } from "react-bootstrap";
 import { FormsReducer } from "../Reducers/FormsReducer";
 import "./Forms.css";
 
@@ -12,10 +12,11 @@ export const Forms = () => {
   const [line2, setLine2] = useState(LineNo2);
   const [city, setCity] = useState(CityName);
   const [pincode, setPincode] = useState(PincodeCity);
+  const [bulbState, setBulbState] = useState("on");
   return (
     <div>
       <Row>
-        <Col md={2}></Col>
+        <Col md={1}></Col>
         <Col md={4}>
           {/* <Card> */}
           <Row>
@@ -105,11 +106,15 @@ export const Forms = () => {
                 <Row>
                   <Col>
                     {" "}
-                    <h4>{`${fname} ${lname}`}</h4>
+                    <h4>
+                      <label>Full Name:</label> {`${fname} ${lname}`}
+                    </h4>
                   </Col>
                 </Row>
                 <Row>
-                  <Col> {`${line1}`}</Col>
+                  <Col>
+                    <label>Last Name:</label> {`${line1}`}
+                  </Col>
                 </Row>
                 <Row>
                   <Col>{`${line2} `}</Col>
@@ -129,7 +134,17 @@ export const Forms = () => {
             </Col>
           </Row>
         </Col>
-        <Col md={4}></Col>
+        <Col md={5}></Col>
+        <Col md="2">
+          <Image
+            src={`IMG/Capture${bulbState}.PNG`}
+            width="100px"
+            height="100px"
+            onClick={() =>
+              bulbState === "off" ? setBulbState("on") : setBulbState("off")
+            }
+          ></Image>
+        </Col>
       </Row>
     </div>
   );
