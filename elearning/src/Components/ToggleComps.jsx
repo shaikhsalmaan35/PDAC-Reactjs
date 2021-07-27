@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Card, Button } from "react-bootstrap";
+import { Card, Button, Row, Col } from "react-bootstrap";
 
 export const ToggleComps = () => {
   const [colorName, setColorName] = useState("Orange");
@@ -24,17 +24,52 @@ export const ToggleComps = () => {
         >
           imag change
         </Button>{" "}
-        <h3 style={{ color: colorName }}>PickupBiz</h3>
-        <p style={{ color: colorName }}>This my consent</p>
-        <img src={"1.jpg"} alt="myimage" />
-        <span style={{ color: colorName }}>
-          {" "}
-          <h1>PDAC Course</h1>
-        </span>
-        <button onClick={() => setColorName("Red")}>Red</button>
-        <button onClick={() => setColorName("Green")}>Green</button>
-        <button onClick={() => setColorName("Black")}>Black</button>
-        <button onClick={() => setColorName("teal")}>Teal</button>
+        <Card style={{ backgroundColor: "rgb(185, 231, 185)" }}>
+          <h3 style={{ color: colorName }}>PickupBiz</h3>
+          <p style={{ color: colorName }}>This my consent</p>
+          <img src={"1.jpg"} alt="myimage" />
+          <span style={{ color: colorName }}>
+            {" "}
+            <h1>PDAC Course</h1>
+          </span>
+        </Card>
+        <Row>
+          <Col md="0"></Col>
+
+          <Col>
+            <Button
+              variant="outline-danger"
+              onClick={() => setColorName("Red")}
+            >
+              danger
+            </Button>
+          </Col>
+          <Col>
+            <Button
+              variant="outline-success"
+              onClick={() => setColorName("Green")}
+            >
+              Success
+            </Button>
+          </Col>
+          <Col>
+            <Button
+              variant="outline-secondary"
+              onClick={() => setColorName("Grey ")}
+            >
+              Grey
+            </Button>
+          </Col>
+          <Col>
+            <Button
+              variant="outline-warning"
+              onClick={() => setColorName("Yellow")}
+            >
+              warning
+            </Button>
+          </Col>
+          <Col md="8"></Col>
+        </Row>
       </Card>
     </div>
   );
