@@ -106,7 +106,7 @@ export const Forms = () => {
           <Row>
             <Col>
               <Card>
-                <Card.Img variant="top" src="logo192.png" />
+                <Card.Img variant="top" src="IMG/1.jpg" />
                 <Row>
                   <Col>
                     {" "}
