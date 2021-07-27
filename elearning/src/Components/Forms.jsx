@@ -100,11 +100,6 @@ export const Forms = () => {
         <Col md={4}>
           <Row>
             <Col>
-              <Button>Submit</Button>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
               <Card>
                 <Card.Img variant="top" src="IMG/1.jpg" />
                 <Row>
@@ -124,6 +119,11 @@ export const Forms = () => {
                 </Row>
                 <Row>
                   <Col>{`${PincodeCity} `}</Col>
+                  <Row>
+                    <Col>
+                      <Button className="button">Submit</Button>
+                    </Col>
+                  </Row>
                 </Row>
               </Card>
             </Col>
