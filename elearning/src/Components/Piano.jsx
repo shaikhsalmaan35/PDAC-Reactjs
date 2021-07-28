@@ -1,13 +1,14 @@
 import React from "react";
 import { Button, Row, Col, Card } from "react-bootstrap";
-import "./Paino.css";
+import "./Piano.css";
 
-export const Paino = () => {
+export const Piano = () => {
   return (
     <div>
       <Card>
         <Row className="top">
-          <Col>low</Col>
+          <Col></Col>
+          <Col> low</Col>
           <Col>medium</Col>
           <Col>high</Col>
         </Row>
