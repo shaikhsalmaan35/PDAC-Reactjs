@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Row, Col, Button } from "react-bootstrap";
+import "./Components/Emicalc.css";
 
 export const Emicalc = () => {
   return (
@@ -10,9 +11,16 @@ export const Emicalc = () => {
           <Col md={3}>
             <Form.Control type="text" placeholder="Principal" />
           </Col>
-          <Form.Control type="text" placeholder="Number of Years" />
-          <Form.Control type="text" placeholder="Rate of Interest" />
-          <Button variant="primary">Calculater</Button>
+          <Col md={1}></Col>
+          <Col md={3}>
+            <Form.Control type="text" placeholder="Number of Years" />
+          </Col>
+          <Col md={3}>
+            <Form.Control type="text" placeholder="Rate of Interest" />
+          </Col>
+          <Col md={2}>
+            <Button variant="primary">Calculater</Button>
+          </Col>
         </Row>
       </Card>
     </div>
