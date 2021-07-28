@@ -15,40 +15,44 @@ export const Emicalc = () => {
   };
   return (
     <div>
-      <Card className="Calc">
+      <Card>
         <Row>
-          <Col md={1}></Col>
-          <Col md={3}>
+          <Col>
             <Form.Control
               type="number"
               placeholder="Principal"
-              onClick={(e) => setP(e.target.value)}
+              onChange={(e) => setP(e.target.value)}
             />
           </Col>
-
-          <Col md={3}>
-            <Form.Control
-              type="text"
-              placeholder="Number of Years"
-              onClick={(e) => setN(e.target.value)}
-            />
-          </Col>
-          <Col md={3}>
-            <Form.Control
-              type="text"
-              placeholder="Rate of Interest"
-              onClick={(e) => setR(e.target.value)}
-            />
-          </Col>
-
-          <Col md={2}>
-            <Button variant="primary">Calculater</Button>
-          </Col>
+          <Row>
+            <Col>
+              <Form.Control
+                type="text"
+                placeholder="Number of Years"
+                onChange={(e) => setN(e.target.value)}
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Form.Control
+                type="text"
+                placeholder="Rate of Interest"
+                onChange={(e) => setR(e.target.value)}
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Button variant="primary" onClick={handleCalEmi}>
+                Calculater
+              </Button>
+            </Col>
+          </Row>
         </Row>
         <Row>
           <Col>
-            <Col md={3}></Col>
-            <h1>Simple Interest : {emi} </h1>
+            <h1>EMI : {emi} </h1>
           </Col>
         </Row>
       </Card>
