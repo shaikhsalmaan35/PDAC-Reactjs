@@ -11,7 +11,7 @@ export const Forms = () => {
   const [line1, setLine1] = useState(LineNo1);
   const [line2, setLine2] = useState(LineNo2);
   const [city, setCity] = useState(CityName);
-  const [pincode, setPincode] = useState(PincodeCity);
+  // const [pincode, setPincode] = useState(PincodeCity);
   const [bulbState, setBulbState] = useState("on");
   return (
     <div>
@@ -83,7 +83,7 @@ export const Forms = () => {
                       ></Form.Control>
                     </Col>
                   </Row>
-                  <Row>
+                  {/* <Row>
                     <Col>
                       <Form.Control
                         type="number"
@@ -91,7 +91,7 @@ export const Forms = () => {
                         onChange={(e) => setPincode(e.target.value)}
                       ></Form.Control>
                     </Col>
-                  </Row>
+                  </Row> */}
                 </Form.Group>
               </Form>
             </Col>
