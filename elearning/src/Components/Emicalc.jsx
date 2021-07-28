@@ -28,7 +28,7 @@ export const Emicalc = () => {
             <Col>
               <Form.Control
                 type="text"
-                placeholder="Number of Years"
+                placeholder="Number of Years ?"
                 onChange={(e) => setN(e.target.value)}
               />
             </Col>

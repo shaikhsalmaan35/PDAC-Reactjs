@@ -7,7 +7,6 @@ export const Piano = () => {
     <div>
       <Card>
         <Row className="top">
-          <Col></Col>
           <Col> low</Col>
           <Col>medium</Col>
           <Col>high</Col>
